@@ -1,0 +1,293 @@
+MUlti AZ dEPLOYMENTS:  high avaialbility,FOR NON-AURORA:synchronous replication
+MULTI: Region:  disaster recovery and local performance, asynchronous replicatioj
+READ REPLICAS: High SCALABILITY, asynchronous replication, it increased DB usage cost.
+
+billing time for on-demand instances is PER SECOND, and minimum is minute
+---------------------------------------------------------------------------
+
+6 ADVANTAGES OF CLOUD COMPUTING:
+  TRADE CAPITAL EXPENSE FOR VARIABLE EXPENSE: you can pay only when you consume computing resources and pay for hoe much you consume.
+  BENIFIT FROM MASSIVE ECONOMIES OF A SCALE: it achieves ECONOMIES OF SCALE which translate into LOWER PAY AS YOU GO
+  STOP GUESSING CAPACITY: bu using scale up/down as required 
+  INCREASE SPEED AND AGILITY: in cloud computing ,new IT resources are only a click away,which means you can reduce the time to make those available to develeopers from weeks to minutes.
+  STOP SPENDING MONEY RUNNING AND MAIANTAINING DATA CENTERS:focus on projects that diffirenciate your businness but not on the infrastructure.
+  GO GLOBAL IN MINUTES: Easily deploy appliaction in multiple regions worldwide with FEW CLICKS.lower latency,better experience for custmers with minimal cost.
+
+-----------------------
+AWS SHARED RESPONSIBILTY MODEL:
+
+--------------------------------------------------
+SUPPORT PLANS:4
+  Basic:it is included for all the aws customers
+  Developer:if you are doing testing or easrly development on AWS and want anbility to get technical support during business hours,7core checks
+  Business:if you have production workload on aws and want 24*7 access to technical support,full core checks,
+  Enterprise:provides custemers with CONCIERGE-LIKE service where the main focus is to help customer to achive outcomes.full core checks,
+             access to ONLINE TRAINING WITH SELF-PACED LABS.24*7 access to technical support from high-quality engineers
+             A disignated TECHINAL ACCOUNT MANAGER(TAM) coordinate with customer.
+-----------------------------------------
+MFA:4
+  VIRTUAL MFA: Application that runs on mobile
+  HARDWARE MFA: hardware device
+  U2F MFA: we can plugin to USB
+  SMS: using mobile num.
+------------------------------------------------
+ELASTIC BEAN STACK: it is a PAAS.it is used for developers to QUICKLY DEPLOY AND MANAGE the applications in aws cloud..Developers simply upload their application and elastic beanstalk automatically handls the capacity provisioning,load balancing,auto scaling health monitoring.
+-----------------------------------------------
+
+DYNAMODB: fully managed,serverless,key-value and document data models, NOSQL(Flexible schema) database.multi-region,bulitin security.
+   DYNAMODB GLOBAL TABLES:ACTIVE-ACTIVE CROSS REGION. replicate data across our choice of multiple regions.can access data in the selectd region with signle DIGIT MIlliSECOND read and write performance.
+   DYNAMODB ACCELARATOR(DAX): IN-MEMORY CACHE that delivers fast rading capacity for the tables.read performance is 10times.read time is in MICROSECONDS.
+
+---------------------------------------
+AWS CONFIG:it enable you to assess ,audit and evaluate cofigurations of aws resources.config continuously monitors and records configurations and evaluated the configuration against desired configurations.
+
+AWS INSPECTOR: AUTOMATED security assessment,check for unintended n/w accessiblity for EC2 instance,and vulnerabilities .
+               it has the agent if we install on ec2,it will continously monitor and collects telemetry data.
+AWS PENATRATION TESTING:  AWS customers can carryout security assessements and penatration tests against their aws infra WITHOUT PRIOR APPROVAL for FEW aws services.
+
+AWS SECRETE MANAGER: protect secretes,rotate,manage,retrive database credentials,API keys.can retrive secretes by call to SECrete manager APIs.
+
+-------------------------------------------
+AWS SERVERLESS: 
+    cloud watch
+    LAMBDA
+    LAMBDA@EDGE
+    FORGATE
+    S3
+    EFS
+    DYNAMODB
+    AURORA (relational)
+    RDS PROXY
+    API GATEWAY
+    SNS,SQS,APPSYNC
+    STEP FUNCTION
+    KINESIS,ATHENA
+-----------------------------------------------   
+STORAGE:  EBS--blocklevel storage.  NOT encrypted, by default. ,N/W drives attached to one EC2instance at a time,Mapped to AZ,can use snapshots for backups and transfer of ebs across AZS.
+          AMI: ready to use EC2 with customizations
+          EC2 IMAGE BUILDER:  Automatically build test and distribute AMI
+          INSTANCE STORE:  Temporary blocklevel storage. is ideal for the temporary storage of information that changes frequently, such as buffers, caches, scratch data
+          EFS: N/W file system,can be attached to 100s of instances in a region,serverless,NOT encrypted, by default, 
+               supports two forms of encryption for file systems, encryption of data in TRANSIT and encryption at REST.
+          EFS-IA: Cost effective
+          FSX FOR WINDOWS:  N/W file system for windows
+          FSX FOR LUSTRE: high performance computing Linux file system
+---------------------------------------------------------------
+AWS ORGANIZATIONS:
+	Sharing of RESERVED instances across multiple aws accounts.
+	Pricing benifits from aggregated usage like volume discounts for ec2,s3
+      setup single payment method for all accounts.
+	automate account creation,
+	centrally manage policies accross multple accounts
+	govern access to services,resources,regions
+	configure services across multiple accounts
+-----------------------------------------
+AWS SERVICE HEALTH DASHBOARD: Provides most up-to-the minute information on the status and availability in tabular form of aws services.
+          offers the possibility to subscribe to RSS feed to be notified of interruptions in the services.
+AWS PERSONAL HEALTH DASHBOARD:  Provieds PERSONALIZED  view of performance and availabilty of services.
+                   it also gives ALERTS and REMEDIATION guidance when experiencing events that impact.
+---------------------------------                    
+ AWS QUICK STARTS REFERENCE: used for deployig popular technologies QUICKLY.it uses cloudformation templates to automate deployment.
+ AWS FORUMS:   AWS Forums is an AWS community platform where people can help each other. It is not used to deploy technologies on AWS.
+ AWS WHITEPAPERS: technical content authorized by aws,You can find useful content for your deployment, but it is not a service that will deploy technologies.
+ AWS CodeDeploy - AWS CodeDeploy is a service that automates code deployments to any instance, including EC2 instances and instances running on-premises.
+                 It is NOT suited to rapidly deploy popular technologies on AWS ready to used immediately
+ AWS Knowledge Center - AWS Knowledge Center contains the most frequent & common questions and requests and AWS provided solutions for the same. 
+                  This should be the starting point of checking for a solution or troubleshooting an issue with AWS services. 
+--------------------------------------
+AWS Acceptable Use Policy:   The Acceptable Use Policy describes prohibited uses of the web services offered by Amazon Web Services.
+------------------------------c---
+AWS Trusted Advisor - AWS Trusted Advisor is an online tool that provides you real-time guidance to help you provision your resources following AWS best practices on cost optimization, security, fault tolerance, service limits, and performance improvement. Whether establishing new workflows,
+                      developing applications, or as part of ongoing improvement, recommendations provided by Trusted Advisor regularly help keep your solutions provisioned optimally
+                      AWS Trusted Advisor can check Amazon Elastic Block Store (Amazon EBS) volume configurations and warns when volumes appear to be underused.
+
+---------------------------------------------------
+AWS CLOUD TRAIL:  account level activity , audit
+----------------------------
+AWS MARKET PLACE:  enables qualified partners to market and sell their software to AWS Customers.
+            AWS Marketplace offers two ways for sellers to deliver software to customers: Amazon Machine Image (AMI) and Software as a Service (SaaS).
+----------------------------------------------
+AWS SYSTEM MANAGER SESSION MANAGER(SSM):   provide secure and auditable instance management WITHOUT the need to OPEN INBOUND PORTS, maintain bastion hosts, and manage SSH KEYS.
+-------------------------------------------------
+Amazon EC2 Instance Connect:  provides a simple and secure way to connect to your Linux instances using Secure Shell (SSH).PORT 22 needs to open
+--------------------------------------------------------------------------
+AWS SYSTEM MANAGER:OPERATIONAL INSITES. Systems Manager provides a central place to view and manage your AWS resources, so you can have complete visibility and control over your operations.
+--------------------------------
+CLOUD WATCH: You can use Amazon CloudWatch Logs to monitor, store, and access your log files from Amazon Elastic Compute Cloud (Amazon EC2) instances, AWS CloudTrail, Route 53, 
+            and other sources such as ON-PREMISE SERVERS.
+-----------------------------------------
+AWS X-Ray - You can use AWS X-Ray to analyze and debug serverless and distributed applications such as those built using a MICROSERVICE architecture.
+-------------------------------------
+AWS Secrets Manager - AWS Secrets Manager helps you protect SECRETES needed to access your applications, services, and IT resources. The service enables you to easily rotate, manage, and retrieve database credentials, 
+                     API keys, and other secrets throughout their lifecycle.
+AWS GLUE: AWS Glue is a fully managed extract, transform, and load (ETL) service. PREPARE DATA FOR ANALYTICS,used for batch ETL data processing
+
+Amazon Macie:to discover and protect sensitive data stored in Amazon S3
+    Macie applies machine learning and pattern matching techniques to the buckets you select to identify and alert you to sensitive data, 
+       such as personally identifiable information (PII).
+
+----------------------------------
+AWS Storage Gateway - AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage. 
+         All data transferred between the gateway and AWS storage is ENCRYPTED using SSL (for all three types of gateways - File, Volume and Tape Gateways).
+
+Amazon Redshift - Encryption is an OPTIONAL setting in Amazon Redshift. 
+------------------------
+AWS Partner Network (APN)  TYPES:
+   CONSULTING PARTENER: professional services firms that help customers of all types and sizes design, architect, build, 
+                        MIGRATE, and manage their workloads and applications on AWS, accelerating their MIGRATION to AWS cloud.
+   TECHNOLOGY PARTENER:  APN Technology Partners provide hardware, connectivity services, or software solutions that are either hosted on or integrated with, the AWS Cloud.
+                         APN Technology Partners CANNOT help in MIGRATING to AWS and managing applications on AWS Cloud.
+---------------------------------------
+
+AWS Shield Advanced provides expanded DDoS attack protection for web applications running on the following resources: Amazon Elastic Compute Cloud, Elastic Load Balancing (ELB), Amazon CloudFront, Amazon Route 53, AWS Global Accelerator.
+---------------------------------------------------------------
+Agility" - AWS provides a massive global cloud infrastructure that allows you to quickly innovate, experiment and iterate. 
+
+Elasticity - This refers to the ability to acquire resources as you need and release when they are no longer needed is termed as Elasticity of the Cloud.
+
+Reliability - This refers to the ability of a system to recover from infrastructure or service disruptions, by dynamically acquiring computing resources to meet demand, and mitigate disruptions.
+
+Scalability - Scalability is the measurement of a system's ability to grow to accommodate an increase in demand, or shrink down to a diminishing demand.
+-----------------------------------
+
+Amazon GuardDuty - Amazon GuardDuty is a threat detection service that monitors malicious activity and unauthorized behavior to protect your AWS account.
+------------------------------
+
+Snowball - AWS Snowball is a data transport solution that accelerates moving terabytes to petabytes of data into and out of AWS services 
+
+DATA MIGRATION SERVICE: FOr migration of data
+
+-------------------------------------
+
+ENCRYOTION ENABLED BY DEFAULT:
+   S3 Glaciar
+   cloud trail
+   storage gateway
+
+-----------------------------------------------
+Amazon Redshift
+
+Amazon Redshift is a fast, fully managed cloud data WAREHOUSE that makes it simple and cost-effective to ANALYSE all your data using standard SQL and your existing Business Intelligence (BI) tools.
+
+-----------------------------------
+FAULT INJECTION SIMULATOR: CHAOS Engineering to expose any blind spots that can disrupt the resiliency of the application.
+
+----------------------------------------
+Amazon SageMaker : deploy MACHINE LEARNING models
+
+COMPREHEND: NLP(natural language processing)
+
+AWS Security Token Service (AWS STS) - AWS Security Token Service (AWS STS) is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users
+
+-------------------
+
+AWS Cognito - Amazon Cognito lets you add user sign-up, sign-in, and access control to your web and mobile apps quickly and easily. 
+              B2B, B2C APPS
+
+S3 Access Logs:maintain records of requests made to the s3 bucket
+
+Amazon ElastiCache: take the load off the database.managed, in-memory caches.
+
+Amazon EMR - Amazon EMR provides a managed Hadoop framework.
+
+
+Amazon CodeGuru - Amazon CodeGuru is a developer tool that provides intelligent recommendations to improve code quality and identify an application’s most expensive lines of code. 
+
+
+AWS X-Ray - AWS X-Ray helps developers analyze and debug production, distributed applications, 
+             such as those built using a microservices architecture.
+
+Amazon Lex:  chatbot for its customer service using Natural Language Understand (NLU).
+
+AMAZON DETECTIVE:  can analyze trillions of events from multiple data sources such as Virtual Private Cloud (VPC) Flow Logs, AWS CloudTrail, and Amazon GuardDuty
+
+Region, which is a physical location around the world where we cluster data centers.
+
+AWS calls each group of logical data centers an Availability Zone.
+ Each AWS Region consists of multiple, isolated, and physically separate AZ's within a geographic area.
+Each AZ has independent power, cooling, and physical security and is connected via redundant, ultra-low-latency networks. 
+All traffic between AZ’s is encrypted
+
+
+Quicksight can be used to visualize this data via advanced interactive dashboards.
+
+Amazon Athena - Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. 
+     Athena is serverless
+
+Amazon Neptune - Amazon Neptune is a fast, reliable, fully-managed GRAPH database service.
+
+
+Amazon AppStream 2.0 - Amazon AppStream 2.0 is a fully managed non-persistent application and
+       DESKTOP streaming service.
+
+
+Amazon WorkSpaces - Amazon WorkSpaces is a managed, secure Desktop-as-a-Service (DaaS) solution. You can use Amazon WorkSpaces to provision either Windows or Linux desktops in just a few minutes and 
+                          quickly scale to provide thousands of desktops to workers across the globe.
+
+AWS OpsHub - AWS OpsHub is a graphical user interface you can use to manage your AWS Snowball devices
+
+
+Reliability - The ability of a workload to perform its intended function correctly and consistently when it’s expected to.
+
+Resiliency - The ability of a workload to recover from infrastructure or service disruptions, 
+
+
+
+
+AWS Wavelength -(5g) AWS Wavelength is an AWS Infrastructure offering optimized for MOBILE EDGE computing applications.
+
+
+
+
+THE FOLLOWING AWS SERVICES SUPPORTS RESERVATIONS FOR COST OPTIMIZATION:
+
+EC2
+DYNAMODB
+RDS(relational)
+REDSHIFT
+ELASTIC CACHE
+
+AWS Artifact:(HIPAA)central resource for compliance-related information that matters to your organization.
+
+
+Region consists of 2 or more AZs
+AZ consists of 1 or more data centers
+
+--------------
+RELIABILITY PILLER SERVICS: Amazon VPC, AWS Trusted Advisor, AWS Service Quotas 
+
+
+GLOBAL RESOURCES: IAM,CLOUDFRONT,ROUTE53,WAF
+
+
+AWS BUDGETS: Give alerts on usage , to track and take action on your AWS costs and usage.
+       to monitor your aggregate utilization and coverage metrics for your Reserved Instances (RIs) or Savings Plans,
+        Types of budgets: Cost BUDGET,USAGE BUDGET,RESEEVATION BUDGET(RI UTILIZATION budgets,RI coverage budgets)
+PRICING CALCULATOR:  ESTIMATE cost of aws services amd products
+
+COST EXPLORER: FORCASTS future cost and usage,manage your AWS costs and usage over time,
+
+COST AND USAGE REPORT: contains the most comprehensive set of cost and usage data available.to publish your AWS billing reports to an Amazon Simple Storage Service (Amazon S3) bucket that you own. 
+         You can receive reports that break down your costs by the hour or month, 
+-------
+AWS Key Management Service (KMS) - AWS Key Management Service (KMS) makes it easy for you to create and manage cryptographic keys 
+                  and control their use across a wide range of AWS services and in your applications.
+
+WEB APPLICATION FIREWALL(WAF): web application from common web exploits such as SQL injection and cross-site scripting.
+
+Amazon GuardDuty:  GuardDuty is a threat detection service that monitors malicious activity and unauthorized behavior to protect your AWS account.
+          analyzes billions of events across your AWS accounts from AWS CloudTrail (AWS user and API activity in your accounts), Amazon VPC Flow Logs (network traffic data), and DNS Logs (name query patterns).
+
+Amazon S3 Transfer Acceleration::  enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket.
+         takes advantage of Amazon CloudFront's globally distributed edge locations
+,
+LAMBDA:  pay for the compute time and the number of requests for your Lambda function,is a serverless compute service offered by AWS.
+
+WELL ARCHITECTURED FRAMEWORK:
+six pillars — operational excellence, security, reliability, performance efficiency, cost optimization and sustainability
+
+Amazon Lightsail -(monthly plan) an easy-to-use cloud platform that offers you everything needed to build an application or website, plus a cost-effective. 
+
+AWS Compute Optimizer:
+    EC2,AUTO SCALE, LAMBDA, EBS
+
